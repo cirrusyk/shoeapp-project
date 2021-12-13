@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" >
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 
 
 <head th:replace="common/header :: common-header"></head>
@@ -7,33 +7,12 @@
 
 <body>
 
-<div th:replace="common/header :: navbar"></div>
-
- <!-- MAIN SECTION -->
-  <div class="commercial">
-    <div class="main-row">
-      <div class="column-text">
-        <h1 class="title-main"><span>nike</span> air huarache</h1>
-        <h2 class="desc-main">
-          THE NIKE AIR HUARACHE KEEPS ALLURING AFTER MORE THAN TWO DECADES. </h2>
-        <h3 class="price-main">950.00DHS</h3>
-        <button class="main-btn" type="button">Add to cart</button>
-      </div>
-      <div class="column-image">
-        <img src="image/nike-hiarache-main.png" alt="">
-      </div>
-    </div>
-  </div>
-
-
+  <div th:replace="common/header :: navbar"></div>
 
   <div class="main">
     <h1 class="title-section"><a href="#new">NEW ARRIVALS</a></h1>
 
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-    <div class="mySlides">
+    <div class="row-first">
       <div class="row-section">
         <div class="column first">
           <div class="image-product">
@@ -70,7 +49,7 @@
       </div>
     </div>
 
-    <div class="mySlides">
+    <div class="row">
       <div class="row-section">
         <div class="column first">
           <div class="image-product">
@@ -106,9 +85,12 @@
 
         </div>
       </div>
+
     </div>
 
-    <div class="mySlides">
+
+
+    <div class="row">
       <div class="row-section">
         <div class="column first">
           <div class="image-product">
@@ -143,20 +125,38 @@
           </div>
 
         </div>
-      </div>
 
+
+      </div>
     </div>
+
+    <div class="pages">
+    <a class="prev-page">&#10094;</a>
+    <a class="page active" href="#">1</a>
+    <a class="page" href="#">2</a>
+    <a class="page" href="#">3</a>
+    <a class="next-page">&#10095;</a>
+    </div>
+
   </div>
 
 
 
-<div th:replace="common/header :: chat"></div>
 
-<div th:replace="common/header :: body-bottom"></div>
 
-  
+
+  <div th:replace="common/header :: chat"></div>
+
+
+
+
+
+
+  <div th:replace="common/header :: body-bottom"></div>
+
+
 
 </body>
- 
+
 
 </html>

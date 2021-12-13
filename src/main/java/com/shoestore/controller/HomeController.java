@@ -10,4 +10,37 @@ public class HomeController {
 		return "index";
 	}
 	
+	@RequestMapping("/newReleases")
+	public String newReleases() {
+		return "newReleases";
+	}
+	
+	@RequestMapping("/man")
+	public String man() {
+		return "man";
+	}
+	
+	@RequestMapping("woman")
+	public String woman() {
+		return "woman";
+	}
+	
+	@RequestMapping("/about")
+	public String about() {
+		return "about";
+	}
+	
+	@RequestMapping("/contact")
+	public String contact() {
+		return "contact";
+	}
+	
+	@RequestMapping("/productPage")
+	public String productPage() {
+		return "productPage";
+	}
+	
+	
+	
+	
 }
