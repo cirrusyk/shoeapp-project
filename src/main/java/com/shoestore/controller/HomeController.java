@@ -35,6 +35,25 @@ public class HomeController {
 		return "contact";
 	}
 	
+	@RequestMapping("/profile")
+	public String profile() {
+		return "profile";
+	}
+	
+	@RequestMapping("/trackOrders")
+	public String trackOrders() {
+		return "trackOrders";
+	}
+	@RequestMapping("/loginRegister")
+	public String loginRegister() {
+		return "loginRegister";
+	}
+	
+	@RequestMapping("/cart")
+	public String cart() {
+		return "cart";
+	}
+	
 	@RequestMapping("/productPage")
 	public String productPage() {
 		return "productPage";

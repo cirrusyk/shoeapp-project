@@ -342,7 +342,6 @@ a.next-page {
   padding: 8px;
 }
 
-
 .product .name-product {
   font-size: 4rem;
   margin-bottom: 45px;
@@ -360,7 +359,7 @@ a.next-page {
 }
 
 select#sizes {
-	cursor: pointer;
+  cursor: pointer;
   font-size: 1.2rem;
   padding: 9px 51px 9px 5px;
   margin: 0 18px 0 15px;
@@ -375,19 +374,106 @@ select#sizes {
   padding: 15px 70px;
 }
 
-
 .product input[type="submit"]:hover {
   cursor: pointer;
-  background-color:#FF8072;
+  background-color: #FF8072;
+}
+
+.product .price {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 2.5rem;
+  padding: 30px 0 48px;
+}
+
+/* PROFILE */
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 6.5% 5% -2.5% 5%;
+  gap: 35px;
+}
+
+.profile .menu {
+  display: flex;
+  flex-direction: column;
+  background-color: #e8e8e8;
+  border: black 1px solid;
+  border-radius: 60px;
+  height: 748px;
+  width: 364px;
+  font-size: 1.6rem;
+  padding: 50px;
+  gap: 50px;
+}
+
+.profile .unactive {
+    color: #878787;
+}
+
+.profile .unactive:hover {
+    color: #444444;
+}
+
+.profile .active:hover {
+    color: #969696;
 }
 
 
+.profile button:hover {
+  background-color: #535353;
+}
 
-.product .price {
-    font-family: 'Montserrat';
-    font-weight: 600;
-    font-size: 2.5rem;
-    padding: 30px 0 48px;
+
+.menu a.active {
+  line-height: 3em;
+  margin-top: 25px;
+  border-bottom: 2px solid #5a5a5a;
+  width: 136px;
+}
+
+h2.logout-option {
+    margin-top: 400px;
+}
+
+.profile .main {
+  background-color: #e8e8e8;
+  border: black 1px solid;
+  border-radius: 60px;
+  height: 633px;
+  font-size: 1.5rem;
+  width: 1056px;
+  padding: 106px 74px;
+}
+
+form.edit-profile {
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-profile .title {
+    margin-bottom: 20px;
+}
+
+.edit-profile label {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.edit-profile input {
+    font-size: 1.7rem;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.profile button {
+    background-color: #242424;
+    color: #fff;
+    border-style: none;
+    padding: 20px 61px;
+    font-size: 1.6rem;
+    margin: 20px 0 80px;
 }
 
 /* FOOTER */
