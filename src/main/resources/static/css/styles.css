@@ -634,8 +634,6 @@ h2.total-cart {
 }
 
 /* PAYMENT */
-
-
 form.payment-form {
   display: flex;
   flex-direction: column;
@@ -664,7 +662,6 @@ form.payment-form {
 }
 
 /* CONFIRM PAYMENT */
-
 .confirm-payment {
   font-family: 'Roboto';
   font-weight: 200;
@@ -676,18 +673,18 @@ form.payment-form {
 }
 
 .confirm-payment img {
-    padding: 50px 0;
+  padding: 50px 0;
 }
 
 h3.order-number {
-    color: #F0331F;
-    margin-bottom: 10px;
+  color: #F0331F;
+  margin-bottom: 10px;
 }
 
 h1.confirmed {
-    font-family: 'Montserrat';
-    font-size: 2.8rem;
-    margin: 0 0 20px;
+  font-family: 'Montserrat';
+  font-size: 2.8rem;
+  margin: 0 0 20px;
 }
 
 h2.payment {
@@ -698,17 +695,193 @@ h2.payment {
 }
 
 h3.thank-you {
-    font-family: 'Roboto';
-    font-weight: 200;
-    font-size: 1.3rem;
-    text-align: center;
-    color: #656565;
-    margin-bottom: 10px;
+  font-family: 'Roboto';
+  font-weight: 200;
+  font-size: 1.3rem;
+  text-align: center;
+  color: #656565;
+  margin-bottom: 10px;
 }
 
 .confirm-payment button {
-    border-radius: 14px;
-    padding: 14px 30px;
+  border-radius: 14px;
+  padding: 14px 30px;
+}
+
+/* TRACK ORDERS USER */
+.menu .profile {
+  color: #818181;
+  justify-content: flex-start;
+}
+
+.menu .profile:hover {
+  color: black;
+}
+
+a.track-orders {
+  border-bottom: black 2px solid;
+  margin-top: 30px;
+  line-height: 2.1;
+}
+
+a.track-orders:hover {
+  color: #818181;
+}
+
+a.logout {
+  color: #818181;
+}
+
+a.logout:hover {
+  color: black;
+}
+
+.order {
+  display: flex;
+  border: black 2px solid;
+  background-color: #D7D7D7;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.main .orders {
+  font-size: 3.5rem;
+}
+
+.order div {
+  padding: 10px;
+}
+
+h2.title-order {
+  margin-bottom: 11px;
+}
+
+.info-order {
+  color: #636363;
+}
+
+.order-ID {
+  border-right: black 2px solid;
+}
+
+.order-products {
+  border-right: black 2px solid;
+}
+
+.total-order {
+  border-right: black 2px solid;
+}
+
+/* MANAGE USERs */
+.container-manageUser {
+  display: flex;
+  margin-top: 30px;
+}
+
+.manageUser-details {
+  display: flex;
+  border: black 2px solid;
+  background-color: #D7D7D7;
+  font-size: 1rem;
+  text-align: center;
+  flex-grow: 1;
+}
+
+a.delete-user {
+  padding: 15px;
+}
+
+h2.logout-option-admin {
+  margin-top: 290px;
+}
+
+/* MANAGE ORDERS */
+.profile .menu-admin {
+  display: flex;
+  flex-direction: column;
+  background-color: #e8e8e8;
+  border: black 1px solid;
+  border-radius: 60px;
+  height: 710px;
+  width: 364px;
+  font-size: 1.6rem;
+  padding: 70px;
+  gap: 50px;
+}
+
+.menu-admin .profile-option {
+  margin-top: 30px;
+}
+
+.menu-admin a.active {
+  line-height: 3em;
+  /* margin-top: 25px; */
+  border-bottom: 2px solid #5a5a5a;
+  width: 136px;
+}
+
+.manageUser-details>div {
+  padding: 15px
+}
+
+.status-order-admin {
+  border-left: black 2px solid;
+}
+
+input.info-order {
+  background: none;
+  padding: 8px;
+  font-size: 1.2rem;
+  width: 159px;
+}
+
+/* MANAGE PRODUCTS */
+.title {
+  display: flex;
+  align-items: baseline;
+}
+
+/* ADD PRODUCT */
+.image-add {
+  display: flex;
+  background-color: #E9E9E9;
+  border-radius: 51px;
+  height: 500px;
+  width: -webkit-fill-available;
+  justify-content: center;
+  padding: 8px;
+  align-items: center;
+}
+
+.image-add img {
+  width: 82px;
+}
+
+.name-product input {
+  font-size: 4rem;
+  font-family: 'Bebas Neue';
+  padding: 10px;
+}
+
+.description input {
+    font-size: 1.5rem;
+    font-family: 'Roboto';
+    width: -webkit-fill-available;
+    height: 101px;
+    padding: 15px;
+}
+
+input#size {
+    width: -webkit-fill-available;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.price input {
+    width: -webkit-fill-available;
+    font-size: 1.5rem;
+    padding: 10px;
 }
 
 /* FOOTER */

@@ -40,9 +40,9 @@ public class HomeController {
 		return "profile";
 	}
 	
-	@RequestMapping("/trackOrders")
-	public String trackOrders() {
-		return "trackOrders";
+	@RequestMapping("/trackOrdersUser")
+	public String trackOrdersUser() {
+		return "trackOrdersUser";
 	}
 	@RequestMapping("/loginRegister")
 	public String loginRegister() {
@@ -70,7 +70,25 @@ public class HomeController {
 		return "cart";
 	}
 	
+	@RequestMapping("/manageUsers")
+	public String  manageUsers() {
+		return "manageUsers";
+	}
 	
+	@RequestMapping("/manageOrders")
+	public String  manageOrders() {
+		return "manageOrders";
+	}
+	
+	@RequestMapping("/manageProducts")
+	public String  manageProducts() {
+		return "manageProducts";
+	}
+	
+	@RequestMapping("/addProduct")
+	public String addProduct() {
+		return "addProduct";
+	}
 	
 	
 }
