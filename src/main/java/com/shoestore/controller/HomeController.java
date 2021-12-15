@@ -49,14 +49,25 @@ public class HomeController {
 		return "loginRegister";
 	}
 	
-	@RequestMapping("/cart")
-	public String cart() {
-		return "cart";
-	}
 	
 	@RequestMapping("/productPage")
 	public String productPage() {
 		return "productPage";
+	}
+	
+	@RequestMapping("/payment")
+	public String payment() {
+		return "payment";
+	}
+	
+	@RequestMapping("/confirmPayment")
+	public String  confirmPayment() {
+		return "confirmPayment";
+	}
+	
+	@RequestMapping("/cart")
+	public String  cart() {
+		return "cart";
 	}
 	
 	

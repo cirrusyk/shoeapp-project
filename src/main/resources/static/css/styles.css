@@ -291,7 +291,7 @@ a.next-page {
   margin-bottom: 3%;
 }
 
-.contaact form {
+.contact form {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -310,8 +310,7 @@ a.next-page {
   border-radius: 5px;
   padding: 16px 59px;
   float: left;
-  bottom: 18%;
-  right: 5%;
+  top: 100%;
   position: absolute;
 }
 
@@ -409,22 +408,20 @@ select#sizes {
 }
 
 .profile .unactive {
-    color: #878787;
+  color: #878787;
 }
 
 .profile .unactive:hover {
-    color: #444444;
+  color: #444444;
 }
 
 .profile .active:hover {
-    color: #969696;
+  color: #969696;
 }
-
 
 .profile button:hover {
   background-color: #535353;
 }
-
 
 .menu a.active {
   line-height: 3em;
@@ -434,7 +431,7 @@ select#sizes {
 }
 
 h2.logout-option {
-    margin-top: 400px;
+  margin-top: 400px;
 }
 
 .profile .main {
@@ -453,27 +450,265 @@ form.edit-profile {
 }
 
 .edit-profile .title {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .edit-profile label {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
 }
 
 .edit-profile input {
-    font-size: 1.7rem;
-    padding: 10px;
-    margin-bottom: 15px;
+  font-size: 1.7rem;
+  padding: 10px;
+  margin-bottom: 15px;
 }
 
 .profile button {
-    background-color: #242424;
-    color: #fff;
-    border-style: none;
-    padding: 20px 61px;
-    font-size: 1.6rem;
-    margin: 20px 0 80px;
+  background-color: #242424;
+  color: #fff;
+  border-style: none;
+  padding: 20px 61px;
+  font-size: 1.6rem;
+  margin: 20px 0 80px;
+}
+
+/* PAYMENT */
+h2.payment {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  padding: 5% 0;
+}
+
+form.payment-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-part {
+  display: flex;
+  flex-direction: column;
+}
+
+.second-part {
+  display: flex;
+  flex-direction: column;
+}
+
+/* CART PAGE */
+.cart-items {
+  margin: 8% 0 7%;
+  display: flex;
+  font-size: 4rem;
+  justify-content: center;
+  align-items: center;
+}
+
+#cart-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+  margin: 3% 7% 5%;
+}
+
+.cart-items .titles {
+  text-align: center;
+}
+
+h3.title-cart {
+  font-weight: 200;
+  font-size: 1.8rem;
+}
+
+.titles {
+  display: flex;
+  text-align: center;
+}
+
+.product-cart {
+  display: flex;
+}
+
+.titles .column-quantiy {
+  display: block;
+}
+
+.product-cart .img-product {
+  height: 266px;
+}
+
+.column-product {
+  display: flex;
+  flex-grow: 3;
+}
+
+.product-cart .info-product {
+  padding: 66px 0px 0px 38px;
+}
+
+.product-cart .column-price {
+  flex-grow: 3;
+}
+
+.product-cart .name-product {
+  font-family: 'Montserrat';
+  font-size: 1.6rem;
+  margin-bottom: 56px;
+}
+
+.product-cart span {
+  color: inherit;
+}
+
+h3.remove {
+  border-bottom: #F0331F 2px solid;
+  width: 100px;
+  color: #F0331F;
+  font-family: 'Montserrat';
+  font-weight: 200;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.product-cart .column-price {
+  flex-grow: 3;
+}
+
+.price-product {
+  font-weight: 500;
+}
+
+.column-total {
+  flex-grow: 1;
+}
+
+.column-quantiy {
+  text-align: center;
+  flex-grow: 4;
+  align-items: flex-start;
+  display: flex;
+}
+
+.column-total {
+  flex-grow: 1;
+}
+
+input.input-text.qty.text {
+  text-align: center;
+  width: 47px;
+  padding: 9px;
+  border: red 1px solid;
+  font-size: 1.2rem;
+}
+
+h2.name-poduct {
+  margin-bottom: 50px;
+}
+
+.sub-total {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sub-total button {
+  border-style: none;
+  padding: 10px 61px;
+  border-radius: 15px;
+  font-size: 1.5rem;
+}
+
+.total {
+  padding: 10px;
+}
+
+h2.total-cart {
+  padding-bottom: 5px;
+}
+
+.cart-info {
+  margin-right: 50px;
+}
+
+/* PAYMENT */
+
+
+form.payment-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.payment-form label {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.payment-form input {
+  padding: 10px;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.payment-form hr {
+  margin: 24px 0;
+}
+
+/* CONFIRM PAYMENT */
+
+.confirm-payment {
+  font-family: 'Roboto';
+  font-weight: 200;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5% 0 8%;
+}
+
+.confirm-payment img {
+    padding: 50px 0;
+}
+
+h3.order-number {
+    color: #F0331F;
+    margin-bottom: 10px;
+}
+
+h1.confirmed {
+    font-family: 'Montserrat';
+    font-size: 2.8rem;
+    margin: 0 0 20px;
+}
+
+h2.payment {
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  padding: 5% 0;
+}
+
+h3.thank-you {
+    font-family: 'Roboto';
+    font-weight: 200;
+    font-size: 1.3rem;
+    text-align: center;
+    color: #656565;
+    margin-bottom: 10px;
+}
+
+.confirm-payment button {
+    border-radius: 14px;
+    padding: 14px 30px;
 }
 
 /* FOOTER */
